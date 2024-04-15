@@ -1,0 +1,456 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Fira+Sans:wght@400;700&display=swap');
+/*GERAL*/
+*{
+    font-family: 'Fira Sans', 'Times', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    color: #131215;
+    letter-spacing: .08rem;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+ul, ul li{
+    display: inline-block;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1100px;
+    display: flex;
+    margin: 0 auto;
+}
+/*HEADER*/
+.header{
+    margin: 0 auto;
+}
+.header-content{
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+}
+.header h1{
+    font-size: 32px;
+    font-family: 'Arima Madurai', 'Roboto', sans-serif;
+    margin: 0;
+    color: initial;
+}
+.header-menu{
+    justify-content: space-between;
+}
+.header-menu div{
+    float: left;
+}
+.header ul li a{
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 40px;
+    color: initial;
+}
+.header h1:hover, .header ul li a:hover{
+    color: #430493;
+}
+#theme-icon{
+    width: 28px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+#theme-icon:hover{
+    cursor: pointer;
+    width: 30px;
+    margin-top: 9px;
+    margin-left: 0;
+}
+/*INTRODUÇÃO*/
+.introducao, .habilidades, .contato{
+    margin: 70px 0 0 0;
+    padding: 60px 160px 60px 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro-left{
+    float: left;
+    flex: 3;
+}
+.intro-left h2::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 20px;
+    background: url('../images/decoracao_roxa.svg') no-repeat center;
+    margin-top: -33px;
+}
+.intro-left h2{
+    font-size: 72px;
+    font-weight: bold;
+    max-width: 60%;
+    padding: 0;
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+.intro-left h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: #453F4D;
+}
+.btn-big{
+    margin-top: 60px;
+    background-image: linear-gradient(#430493, #540FAA);
+    display: inline-block;
+    padding: 2px 50px;
+    border-radius: 10px;
+}
+.btn-big:hover{
+    background-image: linear-gradient(#350077, #430493);
+    cursor: pointer;
+}
+.btn-big p{
+    color: #F0EDF4;
+    font-size: 18px;
+    font-weight: normal;
+}
+.btn-big img{
+    margin-left: 6px;
+    width: 12px;
+}
+.intro-right{
+    flex: 2;
+}
+.introducao .redes ul li{
+    margin-right: 40px;
+}
+.introducao .redes ul li:last-child{
+    margin-right: 0;
+}
+.introducao .redes ul li img{
+    width: 44px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+.introducao .redes ul li img:hover{
+    width: 46px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+/*HABILIDADES*/
+.habilidades .left, .formacao .left{
+    flex: 5;
+}
+.habilidades h2, .formacao h2{
+    width: 60%;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: #A69DB0;
+    margin: 0;
+}
+.habilidades .right, .formacao .right{
+    flex: 7;
+}
+.habilidades .right p{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.hab-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.hab-list li{
+    background-color: #6016BC;
+    padding: 8px 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #F0EDF4;
+    border-radius: 5px;
+}
+.hab-list li:hover{
+    background-color: #350077;
+    cursor: pointer;
+}
+/*FORMACAO*/
+#cursos::after{
+    display: inline-block;
+    content: '';
+    width: 29px;
+    height: 24px;
+    margin-left: 10px;
+    background: url('../images/book.svg') no-repeat center;
+}
+#idiomas::after{
+    display: inline-block;
+    content: ' ';
+    width: 28px;
+    height: 27.5px;
+    margin-left: 10px;
+    background: url('../images/language.svg') no-repeat center;
+}
+.formacao{
+    margin: 130px 0 0 0;
+    padding: 60px 160px 80px 160px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #131215;
+}
+.formacao h2{
+    color: #050506;
+}
+.formacao .right *{
+    color: #F0EDF4;
+}
+.formacao p{
+    font-size: 16px;
+}
+.formacao h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.form-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.form-list .item{
+    background-color: #050506;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: start;
+}
+.form-list .item p, .form-list .item span{
+    font-size: 12px;
+    color: #A69DB0;
+    margin-top: 30px;
+}
+.form-list .item-roxo h4{
+  padding-top: 10px;
+}
+.form-list .item-roxo h4::before, .form-list .item-verde h4::before{
+    width: 30px;
+    height: 6px;
+    transform: rotate(90deg);
+    margin-left: -32px;
+    left: 0;
+    content: ' ';
+    background: url('../images/decoracao_roxa.svg') no-repeat center;
+    display: inline-block;
+}
+.form-list .item-verde h4::before{
+    background: url('../images/decoracao_verde.svg') no-repeat center;
+}
+.form-list .item-verde h4{
+    padding-top: 20px;
+}
+.form-list .item h4{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+}
+.form-list .inline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.form-list .inline *{
+    margin: 0;
+    justify-self: left;
+}
+.form-list .inline span{
+    justify-self: right;
+}
+.form-list .idioma p{
+    font-weight: bold;
+    font-size: 20px;
+    color: #F0EDF4;
+}
+.form-list .idioma span{
+    font-size: 12px;
+}
+.form-list-grid-2{
+    grid-template-columns: 2fr 2fr;
+}
+/*CONTATO*/
+.contato-title{
+    width: 100%;
+}
+.contato-title h2{
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 48px;
+    text-align: center;
+}
+.contato-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    column-gap: 40px;
+}
+.contato-conteudo .left p{
+    font-size: 32px;
+}
+.contato-conteudo .right h3{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.contato-form{
+    padding: 30px;
+    background-color: #131215;
+    border-radius: 10px;
+}
+.contato-form *{
+    color: #F0EDF4;
+    font-weight: normal;
+}
+.contato-form h4{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contato-form form *{
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.contato-form textarea{
+    resize: none;
+    height: 150px;
+}
+.contato-form input, .contato-form textarea{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px ridge #050506;
+    font-size: 14px;
+}
+.contato-form input:focus, .contato-form textarea:focus{
+    border: none;
+    border-bottom: 2px ridge #000;
+    outline: none !important;
+    font-size: 15px;
+}
+.btn-contato{
+    background-color: #6016BC;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+.btn-contato:hover{
+    cursor: pointer;
+    background-color: #430493;
+}
+.btn-contato span{
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+/*FOOTER*/
+.footer{
+    background-color: #350077;
+}
+.footer a, .footer p, .footer h2{
+    color: #F0EDF4;
+}
+.footer-content{
+    padding-top: 40px;
+}
+.footer-content>div{
+    flex: 1;
+}
+.footer-content .first{
+    flex: 2;
+}
+.footer-content .topics li a{
+    font-size: 18px;
+    color: #F0EDF4;
+    margin-left: 12px;
+}
+.footer-content .topics li a:hover{
+    color: #6016BC;
+}
+.footer-content ul li img{
+    width: 44px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.footer-content ul li img:hover{
+    width: 46px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+}
+.footer h1{
+    padding: 0;
+    margin: 0;
+}
+.footer h1 a{
+    font-size: 32px;
+    font-family: 'Arima Madurai', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.footer h1 a:hover{
+    color: #6016BC;
+}
+.footer h2{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+.footer p{
+    text-align: center;
+    margin: 20px auto 40px auto;
+}
+/*DARK*/
+.dark *{
+    color: #F0EDF4;
+}
+.dark{
+    background-color: #131215;
+}
+.dark .header h1,
+.dark .header ul li a{
+    color: #F0EDF4;
+}
+.dark .header h1:hover, .dark .header ul li a:hover{
+    color: #A874CD;
+}
+.dark .introducao h3{
+    color: #A69DB0;
+}
+.dark .habilidades .left h2{
+    color: #050506;
+}
+.dark .formacao{
+  background-color: #302f31;
+}
+/*RESPONSIVO*/
+@media (max-width: 920px){
+    body{
+      background-color: #453F4D;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .header{
+      margin-left: 160px;
+    }
+    .header-menu ul{
+      padding: 0px;
+    }
+    .footer{
+      padding-left: 160px;
+    }
+}
+@media (max-width: 680px){
+    body{
+      background-color: #000;
+    }
+}
